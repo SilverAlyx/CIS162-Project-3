@@ -1,0 +1,129 @@
+@charset "utf-8";
+@font-face {
+   font-family: Quicksand;
+   src: url('Quicksand-Regular.woff') format('woff'),
+        url('Quicksand-Regular.ttf') format('truetype');
+}
+html {
+   background-color: #b19cd9
+}
+body {
+	background-color: lavender;
+    font-family: Verdana, Geneva, sans-serif
+} 
+
+header {
+  text-align: center;
+}
+
+header img {
+  display: inline-block;
+  width: 85%;
+  margin: 0 auto;
+} 
+
+h1, h2, h3 {
+    color: mediumpurple;
+	font-size: 36px;
+	text-align: center;
+}
+h1 {font-size: 2.2em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.5em;}
+h1, h2, h3 {
+    font-family: Quicksand, Verdana, Geneva, sans-serif
+    ;letter-spacing: 0.1em;
+} 
+
+section {background-color: white;
+         margin-left: auto;
+         margin-right: auto;
+         width: 75%;
+         font-size: 1.2em;}
+p {
+	color: mediumpurple;
+	font-size: 18px;
+	text-align: center;
+}
+ul {
+	list-style-type: square;
+    color: mediumpurple;
+	font-size: 24px;
+    text-align: justify
+} 
+
+nav.horizontalNavigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lavender
+}
+
+nav.horizontalNavigation li {
+   display: block;
+   float: left;
+}
+
+nav.horizontalNavigation li a {
+   display: block;
+   color: mediumpurple;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   text-align: center;
+}  
+
+li a:hover {
+    background-color: lavenderblush;
+}  
+
+/* Left Column Styles */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#leftColumn {
+   clear: left;
+   float: left;
+   flex: 1;
+   padding: 1.5em;
+   width: auto;
+}
+
+/* Right Column Styles */
+
+section#rightColumn { 
+    clear: right;
+    float: right;
+    flex: 1;
+    padding: 1.5em;
+    width: auto;
+} 
+
+body > footer {
+    background-color: lavender;
+    color: mediumpurple;
+    font: normal small-caps bold 0.9em/3em
+          Quicksand, Verdana, Geneva, sans-serif;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px
+} 
+
+footer {
+  background-color: mediumpurple;
+}
+
+footer a {
+  color: purple;
+  text-decoration: none;
+}
+
+footer a:hover {
+  background-color: lavenderblush;
+}
