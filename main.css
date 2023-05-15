@@ -4,13 +4,21 @@
    src: url('Quicksand-Regular.woff') format('woff'),
         url('Quicksand-Regular.ttf') format('truetype');
 }
+
 html {
-   background-color: #b19cd9
+   background-color: #b19cd9;
 }
+  
 body {
 	background-color: lavender;
     font-family: 'Amatic SC', cursive;
 } 
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 header {
   text-align: center;
@@ -35,6 +43,61 @@ h1, h2, h3 {
     font-family: 'Stardos Stencil', cursive;
     ;letter-spacing: 0.1em;
 } 
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: lavenderblush;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: mediumpurple;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: lightpink;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: lavender;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+
+
 
 section {background-color: white;
          margin-left: auto;
@@ -80,30 +143,13 @@ li a:hover {
     background-color: lavenderblush;
 }  
 
-/* Left Column Styles */
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
+
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: purple;
 }
-
-section#leftColumn {
-   clear: left;
-   float: left;
-   flex: 1;
-   padding: 1.5em;
-   width: auto;
-}
-
-/* Right Column Styles */
-
-section#rightColumn { 
-    clear: right;
-    float: right;
-    flex: 1;
-    padding: 1.5em;
-    width: auto;
-} 
 
 body > footer {
     background-color: lavender;
@@ -117,6 +163,7 @@ body > footer {
     padding: 10px
 } 
 
+
 /* Bootstrap slidshow */
 
 .carousel-item img {
@@ -124,9 +171,19 @@ body > footer {
   height: 400px; /* Change this value to set the desired height */
   object-fit: cover;
 }
- 
+
 footer {
-  background-color: mediumpurple;
+  background-color: lavender;
+  background-size: cover; /* to cover the whole element */
+  background-repeat: no-repeat; /* to prevent repeating the image */
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  width: 100%;
+  text-decoration-color: mediumpurple
 }
 
 footer a {
