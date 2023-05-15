@@ -164,6 +164,31 @@ body > footer {
 } 
 
 
+/* Left Column Styles */
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#leftColumn {
+   clear: left;
+   float: left;
+   flex: 1;
+   padding: 1.5em;
+   width: auto;
+}
+
+/* Right Column Styles */
+
+section#rightColumn { 
+    clear: right;
+    float: right;
+    flex: 1;
+    padding: 1.5em;
+    width: auto;
+} 
+
 /* Bootstrap slidshow */
 .carousel-item img {
   width: 100%;
@@ -197,3 +222,4 @@ footer a {
 footer a:hover {
   background-color: lavenderblush;
 }
+
