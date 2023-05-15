@@ -223,3 +223,13 @@ footer a:hover {
   background-color: lavenderblush;
 }
 
+p.float-end a {
+  color: purple;
+  text-decoration: none;
+}
+
+p.float-end a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
