@@ -1,0 +1,199 @@
+@charset "utf-8";
+@font-face {
+   font-family: Quicksand;
+   src: url('Quicksand-Regular.woff') format('woff'),
+        url('Quicksand-Regular.ttf') format('truetype');
+}
+
+html {
+   background-color: lavender;
+}
+
+body {
+	background-color: lavender;
+    font-family: 'Amatic SC', cursive;
+} 
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  display: inline-block;
+  width: 85%;
+  margin: 0 auto;
+} 
+
+h1, h2, h3 {
+    color: mediumpurple;
+	font-size: 36px;
+	text-align: center;
+}
+h1 {font-size: 2.2em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.5em;}
+h1, h2, h3 {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Stardos Stencil', cursive;
+    ;letter-spacing: 0.1em;
+} 
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: lavenderblush;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: mediumpurple;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: lightpink;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: lavender;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+
+
+
+section {background-color: white;
+         margin-left: auto;
+         margin-right: auto;
+         width: 75%;
+         font-size: 1.2em;}
+p {
+	color: mediumpurple;
+	font-size: 20px;
+	text-align: center;
+}
+
+ul {
+	list-style-type: square;
+    color: mediumpurple;
+	font-size: 24px;
+    text-align: justify
+} 
+
+nav.horizontalNavigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lavender
+}
+
+nav.horizontalNavigation li {
+   display: block;
+   float: left;
+}
+
+nav.horizontalNavigation li a {
+   display: block;
+   color: mediumpurple;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   text-align: center;
+}  
+
+li a:hover {
+    background-color: lavenderblush;
+}  
+
+
+
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: purple;
+}
+
+body > footer {
+    background-color: lavender;
+    color: mediumpurple;
+    font: normal small-caps bold 0.9em/3em
+          Quicksand, Verdana, Geneva, sans-serif;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px
+} 
+
+
+/* Bootstrap slidshow */
+.carousel-item img {
+  width: 100%;
+  height: 400px; /* Change this value to set the desired height */
+  object-fit: cover;
+}
+
+.carousel-container {
+  margin-bottom: 50px;
+}
+
+body {
+  padding-bottom: 70px; /* add some padding at the bottom to prevent the footer from overlapping with other content */
+}
+
+footer {
+  background-color: lavender;
+  background-size: cover; /* to cover the whole element */
+  background-repeat: no-repeat; /* to prevent repeating the image */
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  text-decoration-color: mediumpurple;
+}
+
+footer a {
+  color: purple;
+  text-decoration: none;
+}
+
+footer a:hover {
+  background-color: lavenderblush;
+}
