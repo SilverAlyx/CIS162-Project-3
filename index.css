@@ -156,6 +156,11 @@ ul {
   color: lightpink!important;
 }
 
+div.card-body p.text-muted {
+  color: purple!important;
+}
+
+
 nav.horizontalNavigation ul {
     list-style-type: none;
     margin: 0;
