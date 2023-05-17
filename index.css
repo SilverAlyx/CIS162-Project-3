@@ -128,9 +128,6 @@ button:hover {
   opacity: 1;
 }
 
-
-
-
 section {background-color: white;
          margin-left: auto;
          margin-right: auto;
@@ -148,6 +145,16 @@ ul {
 	font-size: 24px;
     text-align: justify
 } 
+
+/* Resume */
+
+.timeline-item .text-muted {
+  color: purple!important;
+}
+
+.timeline-item .h6.mb-2 {
+  color: lightpink!important;
+}
 
 nav.horizontalNavigation ul {
     list-style-type: none;
