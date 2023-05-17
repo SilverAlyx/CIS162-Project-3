@@ -44,6 +44,38 @@ h1, h2, h3 {
     ;letter-spacing: 0.1em;
 } 
 
+h1, h2, h3, .h5, .h5-with-margin {
+    color: mediumpurple;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Stardos Stencil', cursive;
+    letter-spacing: 0.1em;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2, .h5 {
+    font-size: 1.5em;
+}
+
+.h5-with-margin {
+  margin-top: 1em;
+}
+
+/* Progress bar */
+
+.bg-purple {
+  background-color: purple;
+  text-decoration-color: white;
+}
+
+.progress, .progress-stacked {
+    --bs-progress-bg: lavender;
+}
+
 input {
   padding: 10px;
   width: 100%;
@@ -232,4 +264,3 @@ p.float-end a:hover {
   color: purple;
   text-decoration: underline;
 }
-
