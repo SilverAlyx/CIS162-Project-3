@@ -184,6 +184,54 @@
     </div>
   </div>
 </div>  
+  
+ <button id="openModalBtn">Awards</button>
+  
+  <div id="myModal" class="modal my-modal-class">
+    <div class="modal-content">
+    <span class="close">&times;</span>
+  <h2>Achievement: Employee of the Year</h2>
+  <p>
+    <strong>Context:</strong> At Rabbit Rescue Inc., an annual award is given to recognize outstanding employees who consistently exceed performance expectations and make significant contributions to the company's success.
+  </p>
+  <p>
+    <strong>Criteria:</strong> The Employee of the Year award is based on several factors including exceptional job performance, dedication, teamwork, innovation, and positive impact on the company's goals.
+  </p>
+  <p>
+    <strong>Impact:</strong> In recognition of my hard work, commitment, and exceptional results in project management, I was honored with the Employee of the Year award. This award reflects my ability to consistently deliver high-quality work, lead successful projects, and foster strong collaboration among team members.
+  </p>
+    </div>
+  </div>
+    
+    <script>
+  // Wait for the document to load
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get the button and modal elements
+    var openModalBtn = document.getElementById("openModalBtn");
+    var modal = document.getElementById("myModal");
+    var closeModalBtn = document.getElementsByClassName("close")[0];
+
+    // Open the modal when the button is clicked
+    openModalBtn.addEventListener("click", function() {
+      modal.style.display = "block";
+    });
+
+    // Close the modal when the close button is clicked
+    closeModalBtn.addEventListener("click", function() {
+      modal.style.display = "none";
+    });
+
+    // Close the modal when the user clicks outside of it
+    window.addEventListener("click", function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
