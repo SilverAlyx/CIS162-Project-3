@@ -70,3 +70,26 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
+
+
+// Resume
+
+document.addEventListener('DOMContentLoaded', function() {
+  var openModalBtn = document.getElementById('openModalBtn');
+  var modal = document.getElementById('myModal');
+  var closeBtn = document.getElementsByClassName('close')[0];
+
+  openModalBtn.addEventListener('click', function() {
+    modal.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', function(event) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});
